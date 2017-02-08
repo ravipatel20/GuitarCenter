@@ -1,0 +1,201 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 31, 2016, 12:11:14 PM
+    Author     : r_v21
+*/
+
+
+article
+{
+    margin: 1em 15em;
+    /*border: 1px solid;*/
+}
+nav
+{
+    border: 0em;
+    background-color: rgb(252,211,157); 
+    padding: 0em;
+    font-size: 16px;
+    margin: 1em 15em;
+    box-shadow: .5px .5px 4px rgba(0, 0, 0, .5);    
+}
+nav ul
+{
+    list-style-type: none;
+    padding: 0em; 
+    margin: 0em;
+}
+nav ul li , .dropdown
+{
+    display: inline-block;
+    position: relative;
+    padding: 0em;
+
+}
+
+nav ul li a, .dropbtn
+{
+    display: inline-block;  
+    padding: .5em 4em .5em 1em;
+}
+nav ul li a:hover,.dropdown:hover
+{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    background-color: rgb(221,167,105);
+}
+
+nav ul li .dropdown-content
+{
+    display: none;
+    min-width: 200px;
+    position: absolute;
+    background-color: rgb(99,69,61);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    color: whitesmoke;
+}
+
+nav ul li .dropdown-content a
+{
+    display: block;      
+    padding: .5em 1em;
+    box-shadow: none;
+}
+nav ul li .dropdown-content a:hover
+{
+    background-color: rgb(146,103,90);
+}
+nav ul li.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+
+button
+{
+    display: block;
+    background-color: rgb(99,69,61);
+    border: 0em;
+    overflow: auto;
+    padding: .4em 1.2em;
+    color: whitesmoke;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    width: 150px;
+    margin: 0;
+}
+
+button:hover
+{    
+    background-color: rgb(146,103,90);
+}
+
+.buttondrop
+{
+    display: none;
+    max-width: 500px;
+    position: relative;
+    background-color: rgb(252,211,157);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    color: black;
+    overflow-wrap: break-word;
+    overflow: auto;
+    margin: .25em 0em;
+    margin-left: 1em;
+    padding: 1em;
+}
+.buttondiv
+{
+    display: block;
+    width: max-content;
+    margin: .5em;
+    overflow: auto;
+    padding: 0em .25em;
+}
+
+.buttondiv a
+{
+    display: block;
+    padding-left: .25em; 
+    cursor: pointer;    
+    color: rgb(146,103,90);
+    font-size: 20px;
+    font-weight: bolder;
+}
+.imagediv
+{
+    display: block;
+    width: 60%;
+    height: 300px;
+    margin: 3em auto 1em;
+    
+}
+
+.imagediv2
+{
+    width: 45%;
+    height: 200px;
+    display: block;
+    margin: 3em 0em 1em;
+    float: left;
+}
+
+.contentdiv
+{
+    display: none;
+    width: 70%;
+    margin: 1em auto;
+}
+
+.btndrop2
+{
+    display: block; 
+    margin: 3em 0em 1em; 
+    float: right; 
+    background-color: rgb(146,103,90);
+    color: whitesmoke;
+    min-height: 170px;
+    max-height: 170px;
+}
+
+.formdiv
+{
+    display: block; 
+    margin: 0em auto 1em; 
+    width: 500px; 
+    position: static;
+    padding: 1em 2em 1em;    
+    background-color: rgb(221,167,105);
+}
+
+.formdiv h1
+{
+    display: block; 
+    width: 150px; 
+    margin: 0em auto 1em;
+    
+}
+
+.formdiv label, .align1
+{
+    float: left;    
+    font-weight: bold;
+    margin: 1em 1em 0em 2em;
+    margin-left: 2em;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.formdiv input, .align2
+{
+    float: right;
+    margin: 1em 10em 0em 1em;
+    margin-right: 8em;
+    width: 200px;
+    font-size: 16px;
+    
+    display: inline-block;
+}

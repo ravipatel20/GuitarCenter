@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="guitarcss.css">
+    </head>
+    <body onload="fetchdata()">
+        <nav>
+            <ul>                
+                <li class="dropdown">
+                    <a class="dropbtn">Guitars</a>
+                    <div class="dropdown-content">
+                        <a>Electric Guitars</a>
+                        <a>Acoustic Guitars</a>
+                        <a>Acoustic-Electric Guitars</a>
+                        <a>Classical Guitars</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">Bass</a>
+                    
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">Drums</a>
+                    
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">Keyboards</a>
+                    
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">Dj and Lighting</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">Used Gears</a>
+                    
+                </li>                
+                <li class="dropdown">
+                    <a class="dropbtn" style="padding-right: 4.5em">Clearance</a>
+                </li>
+                    
+            </ul>
+        </nav>
+        
+        <article>
+            <img id="guitarimg" src="images/main.jpg" class="imagediv" alt="sale" onclick="loadguitar()">
+            <div id="content" class="contentdiv">
+                <button type="button" style="float: left; border-bottom-left-radius: 100px; border-top-right-radius: 100px;" onclick="imgprev()">Previous</button>
+                <button type="button" style="float: right; border-bottom-right-radius: 100px; border-top-left-radius: 100px;" onclick="imgnext()">Next</button>
+                <br><br><br><br><br>
+                
+                <div class="buttondiv">
+                    <a onclick='displaydrop("drop1")'>+ Product Info</a>
+                    <div id="drop1" class="buttondrop"></div>
+                </div>
+                
+                <div class="buttondiv">
+                    <a onclick='displaydrop("drop2")'>+ Shipping Info</a>
+                    <div id="drop2" class="buttondrop"></div>
+                </div>
+                
+                <div class="buttondiv">
+                    <a onclick='displaydrop("drop3")'>+ Customer Reviews</a>
+                    <div id="drop3" class="buttondrop"></div>
+                </div>
+                <button type="button" style="margin: 1em auto;" onclick="page2('guitar2.html?id=');">Buy</button>
+            </div>
+        </article>
+        
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <script src="Guitarjs.js">
+            
+        </script>
+    </body>
+</html>

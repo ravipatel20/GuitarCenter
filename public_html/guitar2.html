@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="guitarcss.css">
+    </head>
+    <body onload="page2load()">
+        <nav>
+            <ul>                
+                <li class="dropdown">
+                    <a class="dropbtn">Guitars</a>
+                    <div class="dropdown-content">
+                        <a>Electric Guitars</a>
+                        <a>Acoustic Guitars</a>
+                        <a>Acoustic-Electric Guitars</a>
+                        <a>Classical Guitars</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">Bass</a>
+                    
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">Drums</a>
+                    
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">Keyboards</a>
+                    
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">Dj and Lighting</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">Used Gears</a>
+                    
+                </li>                
+                <li class="dropdown">
+                    <a class="dropbtn" style="padding-right: 4.5em">Clearance</a>
+                </li>
+                    
+            </ul>
+        </nav>
+        
+        <article>
+            
+            <div style="margin: 0px 0px 5em; overflow: auto">
+            <img id="guitarimg" class="imagediv2" alt="sale" style="float: left; border: 1px solid;">
+            <div id="drop1" class="buttondrop btndrop2" ></div>
+            </div>
+            
+            <div style="overflow: auto; margin: auto; width:570px;" id="invalidform">
+                <form class="buttondrop formdiv" onsubmit="return disprev()">
+                <h1>Purchase Info</h1>
+                
+                <div style="overflow: auto;">
+                <label>First Name :</label> 
+                <input type="text" pattern="[A-Za-z]+" id="fname" required onchange="formvalidity('fname')" >
+                </div>
+                
+                <div style="overflow: auto;">
+                <label>Last Name :</label> 
+                <input type="text" pattern="[A-Za-z]+" id="lname" required onchange="formvalidity('lname')" >
+                </div>
+                
+                <div style="overflow: auto;">
+                <label>Address :</label> 
+                <input type="text" id="line1" placeholder="Line 1" pattern="[A-Za-z0-9]+" required onchange="formvalidity('line1')" >
+                <input type="text" id="line2" placeholder="Line 2" pattern="[A-Za-z0-9]+" required onchange="formvalidity('line2')" >
+                </div>
+                
+                <div style="overflow: auto;">
+                <label>City :</label> 
+                <input type="text" id="city" pattern="[A-Za-z]+" required onchange="formvalidity('city')" >
+                </div>
+                
+                <div style="overflow: auto;">
+                <label>State :</label> 
+                <input type="text" id="state" pattern="[A-Za-z]+" required onchange="formvalidity('state')" >
+                </div>
+                
+                
+                <div style="overflow: auto;">
+                <label>email :</label> 
+                <input type="email" id="mail" required onchange="formvalidity('mail')">
+                </div>
+                
+                <div style="overflow: auto;">
+                <label>Credit Card :</label> 
+                <input type="text" id="cc" pattern="[0-9]{16}" required onchange="formvalidity('cc')" >
+                </div>
+                                
+                <button type="submit" style="margin-top: 1em; float:right;" >Review</button>
+            </form>
+                
+        </div>
+        </article>
+        
+        <nav style="margin: 3em 37em; padding-bottom: .01em; display: none;" id="validform">
+            <div style="overflow: auto;">
+                <p class="align1">Name : </p><p id="name" class="align2">Ravikumar Patel</p>
+            </div>
+            <div style="overflow: auto;">
+                <p class="align1">Address :</p>
+                <p id="adl1" class="align2">Saniya Hemad</p>
+                <p id="adl2" class="align2">Tal: Saniya Hemad</p>
+                <p id="adl3" class="align2">Surat</p>
+                <p id="adl4" class="align2">Gujarat - 395006</p>
+            </div>
+            
+            <div style="overflow: auto;">
+                <p class="align1">Email : </p><p id="email" class="align2">Ravikumar Patel</p>
+            </div>
+            
+            <div style="overflow: auto;">
+                <p class="align1">Credit Card : </p><p id="card" class="align2">xxxx-xxxx-xxxx-xxxx</p>
+            </div>
+            <button type="button" style="margin: 1em auto .5em;" onclick="page2('guitar3.html?id='); itemstore()">Buy</button>
+        </nav>
+        <script src="Guitarjs.js">            
+        </script>
+    </body>
+</html>
